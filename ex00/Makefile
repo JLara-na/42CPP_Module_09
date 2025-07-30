@@ -6,13 +6,13 @@
 #    By: jlara-na <jlara-na@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/03 16:19:34 by jlara-na          #+#    #+#              #
-#    Updated: 2025/07/24 21:18:01 by jlara-na         ###   ########.fr        #
+#    Updated: 2025/07/30 17:08:34 by jlara-na         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #-----------EXECUTABLE-----------
 
-NAME			:=		ex00.exe
+NAME			:=		btc
 #-----------DIR PATHS------------
 
 SRC_DIR			:=		src/
@@ -74,6 +74,7 @@ CUSTOM_4		=		\033[38:5:101m
 
 #---------SRC OBJ DEP INC---------
 SRC_FILES		=		main					\
+						BitcoinExchange					\
 
 
 SRC 			= 		$(addprefix $(SRC_DIR), $(addsuffix .cpp, $(SRC_FILES)))

@@ -6,12 +6,13 @@
 /*   By: jlara-na <jlara-na@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:02:41 by jlara-na          #+#    #+#             */
-/*   Updated: 2025/07/29 00:38:31 by jlara-na         ###   ########.fr       */
+/*   Updated: 2025/07/30 17:07:57 by jlara-na         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/easyfind.hpp"
+#include "../inc/BitcoinExchange.hpp"
 
 int main() {
+    BitcoinExchange btc("input.txt", "data.csv");
     return 0;
 }
