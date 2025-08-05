@@ -6,7 +6,7 @@
 #    By: jlara-na <jlara-na@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/03 16:19:34 by jlara-na          #+#    #+#              #
-#    Updated: 2025/07/30 17:08:34 by jlara-na         ###   ########.fr        #
+#    Updated: 2025/08/03 15:55:20 by jlara-na         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ INC_DIR			:=		inc/
 
 MAKEFLAGS		:=		--no-print-directory
 CXX = c++
-CXXFLAGS =	-Wall -Wextra -Werror -std=c++98 -I inc -fsanitize=leak
+CXXFLAGS =	-Wall -Wextra -Werror -std=c++98 -I inc
 
 #-----------SHORT CUTS-----------
 
