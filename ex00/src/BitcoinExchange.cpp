@@ -6,11 +6,13 @@
 /*   By: jlara-na <jlara-na@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 11:19:03 by jlara-na          #+#    #+#             */
-/*   Updated: 2025/08/05 16:08:29 by jlara-na         ###   ########.fr       */
+/*   Updated: 2025/08/05 17:48:08 by jlara-na         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/BitcoinExchange.hpp"
+
+BitcoinExchange::BitcoinExchange(){}
 
 BitcoinExchange::BitcoinExchange(std::string const &csv_file, std::string const &input_file) : _input_file(input_file), _csv_file(csv_file)
 {

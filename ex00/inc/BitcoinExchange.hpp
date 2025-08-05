@@ -6,7 +6,7 @@
 /*   By: jlara-na <jlara-na@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 11:19:00 by jlara-na          #+#    #+#             */
-/*   Updated: 2025/08/05 16:11:09 by jlara-na         ###   ########.fr       */
+/*   Updated: 2025/08/05 17:47:39 by jlara-na         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class BitcoinExchange
         std::string                     _csv_file;
         std::map<std::string, double>   _exchangeRates;
     public:
+        BitcoinExchange();
         BitcoinExchange(std::string const &csv_file, std::string const &input_file);
         BitcoinExchange(const BitcoinExchange &other);
         ~BitcoinExchange();
