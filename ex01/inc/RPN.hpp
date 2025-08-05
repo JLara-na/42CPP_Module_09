@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   RPN.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jlara-na <jlara-na@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/12 16:02:41 by jlara-na          #+#    #+#             */
-/*   Updated: 2025/08/05 16:32:26 by jlara-na         ###   ########.fr       */
+/*   Created: 2025/08/05 16:27:09 by jlara-na          #+#    #+#             */
+/*   Updated: 2025/08/05 17:34:42 by jlara-na         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/RPN.hpp"
+#pragma once
+# include <iostream>
+# include <sstream>
+# include <stack>
 
-int main(int ac, char **av){
-    if (ac != 2){
-        std::cerr << "Error: argument must be 1 expression" << std::endl;
-        return 1;
-    }
-    try{
-        RPN reversePolishNotation(av[1]);
+class RPN
+{
+    private:
+        std::string _operation;
+    public:
+        RPN();
+        RPN(std::string input);
+        RPN(const RPN &other);
+        ~RPN();
+        RPN &operator=(const RPN &other);
 
-        reversePolishNotation.printResult();
-    }
-    catch(const std::exception& e){
-        std::cerr << e.what() << std::endl;
-        return 1;
-    }
-    return 0;
-}
+        void setOperation(const std::string &input);
+        void printResult();
+};
