@@ -6,13 +6,13 @@
 #    By: jlara-na <jlara-na@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/06/03 16:19:34 by jlara-na          #+#    #+#              #
-#    Updated: 2025/07/29 00:47:31 by jlara-na         ###   ########.fr        #
+#    Updated: 2025/08/08 16:28:53 by jlara-na         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #-----------EXECUTABLE-----------
 
-NAME			:=		ex02.exe
+NAME			:=		PmergeMe
 #-----------DIR PATHS------------
 
 SRC_DIR			:=		src/
@@ -23,7 +23,7 @@ INC_DIR			:=		inc/
 
 MAKEFLAGS		:=		--no-print-directory
 CXX = c++
-CXXFLAGS =	-Wall -Wextra -Werror -std=c++98 -I inc -fsanitize=leak
+CXXFLAGS =	-Wall -Wextra -Werror -std=c++98 -I inc
 
 #-----------SHORT CUTS-----------
 
@@ -74,6 +74,7 @@ CUSTOM_4		=		\033[38:5:101m
 
 #---------SRC OBJ DEP INC---------
 SRC_FILES		=		main					\
+						PmergeMe				\
 
 
 SRC 			= 		$(addprefix $(SRC_DIR), $(addsuffix .cpp, $(SRC_FILES)))
